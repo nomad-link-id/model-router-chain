@@ -1,0 +1,19 @@
+{
+  "name": "model-router-chain",
+  "version": "1.0.0",
+  "description": "Smart LLM routing with automatic fallback, complexity scoring, and cost optimization.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run"
+  },
+  "author": "Igor Eduardo",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0",
+    "vitest": "^4.1.1"
+  }
+}
