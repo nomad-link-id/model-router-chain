@@ -233,6 +233,10 @@ interface ModelConfig {
 
 Extracted from a healthcare AI platform that needed to serve physicians 24/7 without downtime and at viable economics. The two-tier design (fast protocol + full analysis) emerged from observing that ~60% of users only need the quick answer -- they never trigger the expensive model. This router formalized that insight into a reusable pattern.
 
+## Part of the LLM Trust Layer
+
+This module is the routing component of [llm-trust-layer](https://github.com/nomad-link-id/llm-trust-layer) -- an end-to-end pipeline combining smart routing, hybrid RAG, and citation verification.
+
 ## License
 
 MIT
