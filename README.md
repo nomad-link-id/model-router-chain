@@ -147,6 +147,8 @@ Query -> Model 1 (cheapest that fits complexity)
 
 The fallback is automatic and invisible to the user. Timeout per model is configurable. The response includes metadata about which model served the request and whether fallback was used.
 
+Models are sorted by cost internally. The fallback chain starts at the cheapest model that can handle the query's complexity and walks up to more expensive models on failure. Configure `timeout` per model to control how long to wait before falling back. Set `onFallback` to log or alert when fallbacks occur.
+
 ## Streaming Support
 
 ```typescript
